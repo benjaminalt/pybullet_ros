@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 Query robot base pose and speed from pybullet and publish to /odom topic

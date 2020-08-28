@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 RGBD camera sensor simulation for pybullet_ros base on pybullet.getCameraImage()

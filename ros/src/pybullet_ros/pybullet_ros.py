@@ -1,10 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+
+from __future__ import print_function
 
 import os
 import importlib
 import rospy
 import pybullet_data
-import pybullet_ros.sdf.sdf_parser as sdf_parser
+import sdf.sdf_parser as sdf_parser
 
 from std_srvs.srv import Empty
 

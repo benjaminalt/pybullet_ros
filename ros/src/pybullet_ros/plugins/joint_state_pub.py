@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 query robot state and publish position, velocity and effort values to /joint_states

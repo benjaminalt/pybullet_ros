@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import numbers
 from geometry_msgs.msg import Pose
+import numpy
 
 def rounded(val):
   if isinstance(val, str):

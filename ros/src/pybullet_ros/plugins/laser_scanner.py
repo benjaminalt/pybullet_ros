@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 Laser scanner simulation based on pybullet rayTestBatch function

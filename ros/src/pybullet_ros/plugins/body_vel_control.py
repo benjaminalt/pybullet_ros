@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 Subscribe to cmd_vel and apply desired speed to the robot, without any noise
