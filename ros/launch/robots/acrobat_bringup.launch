@@ -4,7 +4,7 @@
     <!-- acrobat robot (simple arm with 2 dof) pybullet_ros bringup -->
 
     <arg name="config_file" default="$(find pybullet_ros)/ros/config/robots/acrobat_robot_config.yaml" />
-    <arg name="robot_urdf_path" default="$(find pybullet_ros)/common/test/urdf/acrobat_robot/acrobat_robot.urdf" />
+    <arg name="robot_urdf_path" default="$(find pybullet_ros)/common/test/urdf/acrobat_robot/acrobat_robot.urdf.xacro" />
     <arg name="robot_pose_z" default="0.0" />
     <arg name="fixed_base" default="True" />
     <!--arg name="world_full_path" default="$(find pybullet_ros)/common/worlds/button.world" /-->

@@ -6,5 +6,6 @@ acrobat_robot.urdf
 r2d2.urdf
 
 .idea
+.vscode
 build
 

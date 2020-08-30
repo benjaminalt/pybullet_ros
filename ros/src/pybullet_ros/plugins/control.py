@@ -109,6 +109,7 @@ class Control:
                 effort_ctrl_task = True
         # forward commands to pybullet, give priority to position control cmds, then vel, at last effort
         if position_ctrl_task:
+            rospy.logerr("\nJoint indices: {}\nTarget positions: {}\nForces: {}".format(self.joint_indices, self.position_joint_commands, self.force_commands))
             self.pb.setJointMotorControlArray(bodyUniqueId=self.robot, jointIndices=self.joint_indices,
                                      controlMode=self.pb.POSITION_CONTROL, targetPositions=self.position_joint_commands, forces=self.force_commands)
         elif velocity_ctrl_task:
