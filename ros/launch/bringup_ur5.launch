@@ -7,7 +7,7 @@
     <arg name="config_file" default="$(find pybullet_ros)/ros/config/robots/ur5_robot_config.yaml" />
     <arg name="environment" default="$(find mbot_simulation_environments)/worlds/isr-testbed.world" />
     <arg name="pybullet_gui" default="True" />
-    <arg name="robot_urdf_path" default="$(find ur_description)/urdf/ur5_robot_with_inertia.urdf.xacro" />
+    <arg name="robot_urdf_path" default="$(find ur_description)/urdf/ur5_robot.urdf.xacro" />
     <arg name="pause_simulation" default="False" />
     <arg name="robot_pose_x" default="0.0" />
     <arg name="robot_pose_y" default="0.0" />
