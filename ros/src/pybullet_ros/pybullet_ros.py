@@ -119,18 +119,7 @@ class pyBulletRosWrapper(object):
             print('\033[34m')
         else:
             rospy.loginfo('loading world : ' + world_path)
-            # get all world models
-            world = sdf_parser.SDF(file=world_path).world
-            print('succesfully imported %d models'% len(world.models))
-            # spawn sdf models in pybullet one at a time
-            for model in world.models:
-                # currently not sure how to set the required pose with loadSDF function...
-                obj_pose = [float(x) for x in model.simple_pose.split() if not x.isalpha()]
-                rospy.loginfo('loading model : ' + model.filename)
-                try:
-                    self.pb.loadSDF(model.filename)
-                except:
-                    rospy.logwarn('failed to load model : ' + model.filename + ', skipping...')
+            self.pb.loadURDF(world_path)
 
     def init_pybullet_robot(self):
         """load robot URDF model, set gravity, and ground plane"""

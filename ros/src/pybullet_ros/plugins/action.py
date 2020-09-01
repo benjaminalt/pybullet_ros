@@ -2,13 +2,11 @@
 
 import rospy
 import actionlib
-from actionlib_msgs.msg import GoalStatus
-from control_msgs.msg import FollowJointTrajectoryAction, FollowJointTrajectoryActionResult, FollowJointTrajectoryResult
+from control_msgs.msg import FollowJointTrajectoryAction, FollowJointTrajectoryResult
 
 
 class ActionServer(object):
     def __init__(self):
-        rospy.logerr("ActionServer started")
         self.action_server = actionlib.SimpleActionServer(
             'pybullet_follow_joint_trajectory', FollowJointTrajectoryAction, execute_cb=self.execute_cb, auto_start=False)
         self.action_server.start()
